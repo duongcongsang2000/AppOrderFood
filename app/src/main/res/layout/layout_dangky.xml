@@ -26,6 +26,7 @@
         android:orientation="vertical">
 
         <EditText
+            android:id="@+id/tendk"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="6dp"
@@ -38,6 +39,7 @@
             android:textColorHint="#972F2F" />
 
         <EditText
+            android:id="@+id/matkhaudk"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="6dp"
@@ -51,6 +53,7 @@
             android:textColorHint="#972F2F" />
 
         <RadioGroup
+            android:id="@+id/grgioitinhdk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="6dp"
@@ -58,14 +61,17 @@
             android:weightSum="2">
 
             <RadioButton
+                android:id="@+id/rdbNam"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:padding="6dp"
+                android:checked="true"
                 android:text="Nam"></RadioButton>
 
             <RadioButton
+                android:id="@+id/rdbNu"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
@@ -75,6 +81,7 @@
         </RadioGroup>
 
         <EditText
+            android:id="@+id/ngaysinhdk"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="6dp"
@@ -87,6 +94,7 @@
             android:textColorHint="#972F2F" />
 
         <EditText
+            android:id="@+id/cmnddk"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="6dp"
@@ -100,13 +108,13 @@
             android:textColorHint="#972F2F" />
 
         <LinearLayout
-            android:id="@+id/dongy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:weightSum="2">
 
             <Button
+                android:id="@+id/dongydk"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="6dp"
@@ -116,6 +124,7 @@
                 android:text="@string/dongy"></Button>
 
             <Button
+                android:id="@+id/thoatdk"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="6dp"

@@ -7,4 +7,6 @@
     <string name="dongy">Đồng Ý</string>
     <string name="thoat">Thoát</string>
     <string name="dangky">Đăng Ký</string>
+    <string name="thongbao1">Vui Lòng Nhập Tên Đăng Nhập</string>
+    <string name="thongbao2">Vui Lòng Nhập Tên Đăng Nhập</string>
 </resources>
