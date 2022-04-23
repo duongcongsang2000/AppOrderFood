@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A2E6EF"
+    tools:context=".DangKyActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/InkhungDangki"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="@string/dangky"
+        android:textColor="#C61367"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/InkhungDangki"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="10dp"
+            android:hint="@string/tendangnhap"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:textColorHint="#972F2F" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="10dp"
+            android:hint="@string/matkhau"
+            android:padding="6dp"
+            android:password="true"
+            android:singleLine="true"
+            android:textColorHint="#972F2F" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:padding="6dp"
+                android:text="Nam"></RadioButton>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:padding="6dp"
+                android:text="Nữ"></RadioButton>
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/calender"
+            android:drawablePadding="10dp"
+            android:hint="@string/ngaysinh"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:textColorHint="#972F2F" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/idcard"
+            android:drawablePadding="10dp"
+            android:hint="@string/chungminhnd"
+            android:numeric="integer"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:textColorHint="#972F2F" />
+
+        <LinearLayout
+            android:id="@+id/dongy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:backgroundTint="#F8359739"
+                android:padding="6dp"
+                android:text="@string/dongy"></Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:backgroundTint="#DA3939"
+                android:padding="6dp"
+                android:text="@string/thoat"></Button>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
