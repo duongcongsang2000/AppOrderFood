@@ -71,9 +71,9 @@ public class DangKyActivity extends AppCompatActivity implements View.OnClickLis
                     nhanvien.setGIOITINH(gioitinh);
                     long kiemtra =nhanviendao.ThemNV(nhanvien);
                     if (kiemtra!=0)
-                        Toast.makeText(DangKyActivity.this,"ThêM Thành Công",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(DangKyActivity.this,"Thêm Thành Công",Toast.LENGTH_SHORT).show();
                     else
-                        Toast.makeText(DangKyActivity.this,"ThêM Thất Bại",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(DangKyActivity.this,"Thêm Thất Bại",Toast.LENGTH_SHORT).show();
 
                 }
                 ;break;

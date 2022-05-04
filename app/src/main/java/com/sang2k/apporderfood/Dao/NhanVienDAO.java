@@ -2,6 +2,7 @@ package com.sang2k.apporderfood.Dao;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.sang2k.apporderfood.DTO.NhanVienDTO;
@@ -22,5 +23,20 @@ public class NhanVienDAO {
         contentValues.put(CreateDatabase.TB_NHANVIEN_NGAYSINH,nhanVienDTO.getNGAYSINH());
         long kiemtra=database.insert(CreateDatabase.TB_NHANVIEN,null,contentValues);
         return kiemtra;
+    }
+    public boolean KiemtraNV(){
+        String truyvan="SELECT * FROM "+CreateDatabase.TB_NHANVIEN;
+        Cursor cursor= database.rawQuery(truyvan,null);
+        if (cursor.getCount()!= 0) return  true;
+        else
+            return false;
+    }
+    public boolean kiemtraDangNhap(String TenDN,String Pass){
+        String truyvan="SELECT * FROM " +CreateDatabase.TB_NHANVIEN+" WHERE "+ CreateDatabase.TB_NHANVIEN_TENDN+ " = '"+
+                TenDN+"' AND " +CreateDatabase.TB_NHANVIEN_MATKHAU+ " = '"+ Pass+"' ";
+        Cursor cursor= database.rawQuery(truyvan,null);
+        if (cursor.getCount()!= 0) return  true;
+        else
+            return false;
     }
 }

@@ -121,6 +121,7 @@
                 android:layout_weight="1"
                 android:backgroundTint="#F8359739"
                 android:padding="6dp"
+                android:visibility="visible"
                 android:text="@string/dongy"></Button>
 
             <Button
